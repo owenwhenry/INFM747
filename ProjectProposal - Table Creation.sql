@@ -47,38 +47,7 @@ longtidue varchar(30)
 )
 ;
 
-Insert Into Table Requests (submit_addrline1, submit_city, submit_state, addr_id)
-VALUES ('1108 Cathedral St', 'Baltimore', 'Maryland', '1');
-Insert Into Table Requests (submit_addrline1, submit_city, submit_state, addr_id)
-VALUES ('228 West Lexington', 'Baltimore', 'Maryland', '2');
-Insert Into Table Requests (submit_addrline1, submit_city, submit_state, addr_id)
-VALUES ('101 East Mt Royal', 'Baltimore', 'Maryland', '3');
-Insert Into Table Requests (submit_addrline1, submit_city, submit_state, addr_id)
-VALUES ('100 N Calvert St', 'Baltimore', 'Maryland', '4');
-Insert Into Table Requests (submit_addrline1, submit_city, submit_state, addr_id)
-VALUES ('1000 Greenmount Ave', 'Baltimore', 'Maryland', '5');
-
-INSERT INTO TABLE Address(
-street_number_long, street_number_short, route_long, route_short, locality_long,
-locality_short, admin_level_1_long, admin_level_1_short, admin_level_2_long, admin_level_2_short,
-country_long, country_short, postal_long, postal_short, latitude, longitude                        
-) 
-VALUES
-('1108', '1108', 'Cathedral Street', 'Cathedral St', 'Baltimore', 'Baltimore', 
- 'Maryland', 'MD', 'Baltimore City', 'Baltimore City', 'United States', 'US', 
- '21201', '21201', '39.301924', '-76.617853');
- 
-INSERT INTO TABLE Address(
-street_number_long, street_number_short, route_long, route_short, locality_long,
-locality_short, admin_level_1_long, admin_level_1_short, admin_level_2_long, admin_level_2_short,
-country_long, country_short, postal_long, postal_short, latitude, longitude                        
-) 
-VALUES
-('228', '228', 'West Lexington Street', 'W. Lexington St.', 'Baltimore', 'Baltimore', 
- 'Maryland', 'MD', 'Baltimore City', 'Baltimore City', 'United States', 'US', 
- '21201', '21201', '39.301781', '-76.79402');
- 
- INSERT INTO TABLE Address(
+ INSERT INTO Address(
 street_number_long, street_number_short, route_long, route_short, locality_long,
 locality_short, admin_level_1_long, admin_level_1_short, admin_level_2_long, admin_level_2_short,
 country_long, country_short, postal_long, postal_short, latitude, longitude                        
@@ -88,7 +57,7 @@ VALUES
  'Maryland', 'MD', 'Baltimore City', 'Baltimore City', 'United States', 'US', 
  '21202', '21202', '39.49603', '-76.39591');
  
- INSERT INTO TABLE Address(
+ INSERT INTO Address(
 street_number_long, street_number_short, route_long, route_short, locality_long,
 locality_short, admin_level_1_long, admin_level_1_short, admin_level_2_long, admin_level_2_short,
 country_long, country_short, postal_long, postal_short, latitude, longitude                        
@@ -98,7 +67,7 @@ VALUES
  'Maryland', 'MD', 'Baltimore City', 'Baltimore City', 'United States', 'US', 
  '21201', '21201', '39.301781', '-76.79402');
  
- INSERT INTO TABLE Address(
+ INSERT INTO Address(
 street_number_long, street_number_short, route_long, route_short, locality_long,
 locality_short, admin_level_1_long, admin_level_1_short, admin_level_2_long, admin_level_2_short,
 country_long, country_short, postal_long, postal_short, latitude, longitude                        
@@ -108,7 +77,7 @@ VALUES
  'Maryland', 'MD', 'Baltimore City', 'Baltimore City', 'United States', 'US', 
  '21201', '21201', '39.967849', '-76.39576');
  
-INSERT INTO TABLE Crime 
+INSERT INTO Crime 
  (
   addr_line_1, Description, Weapon, Latitude, longtidue
   )
@@ -121,7 +90,7 @@ VALUES
   '-76.56854'
   );
   
-  INSERT INTO TABLE Crime 
+  INSERT INTO Crime 
  (
   addr_line_1, Description, Weapon, Latitude, longtidue
   )
@@ -134,7 +103,7 @@ VALUES
   '-76.10395'
   );
   
-INSERT INTO TABLE Crime 
+INSERT INTO Crime 
  (
   addr_line_1, Description, Weapon, Latitude, longtidue
   )
@@ -147,7 +116,7 @@ VALUES
   '-76.25468'
   );
  
-INSERT INTO TABLE Crime 
+INSERT INTO Crime 
  (
   addr_line_1, Description, Weapon, Latitude, longtidue
   )
@@ -160,7 +129,7 @@ VALUES
   '-76.08965'
   );
   
-  INSERT INTO TABLE Crime 
+  INSERT INTO Crime 
  (
   addr_line_1, Description, Weapon, Latitude, longtidue
   )
@@ -171,4 +140,35 @@ VALUES
   NULL,
   '39.40496',
   '-76.12409'
-  );
+);
+
+INSERT INTO Address(
+street_number_long, street_number_short, route_long, route_short, locality_long,
+locality_short, admin_level_1_long, admin_level_1_short, admin_level_2_long, admin_level_2_short,
+country_long, country_short, postal_long, postal_short, latitude, longitude                        
+) 
+VALUES
+('1108', '1108', 'Cathedral Street', 'Cathedral St', 'Baltimore', 'Baltimore', 
+ 'Maryland', 'MD', 'Baltimore City', 'Baltimore City', 'United States', 'US', 
+ '21201', '21201', '39.301924', '-76.617853');
+ 
+INSERT INTO Address(
+street_number_long, street_number_short, route_long, route_short, locality_long,
+locality_short, admin_level_1_long, admin_level_1_short, admin_level_2_long, admin_level_2_short,
+country_long, country_short, postal_long, postal_short, latitude, longitude                        
+) 
+VALUES
+('228', '228', 'West Lexington Street', 'W. Lexington St.', 'Baltimore', 'Baltimore', 
+ 'Maryland', 'MD', 'Baltimore City', 'Baltimore City', 'United States', 'US', 
+'21201', '21201', '39.301781', '-76.79402');
+
+Insert Into Requests (submit_addrline1, submit_city, submit_state, addr_id)
+VALUES ('1108 Cathedral St', 'Baltimore', 'Maryland', '4');
+Insert Into Requests (submit_addrline1, submit_city, submit_state, addr_id)
+VALUES ('228 West Lexington', 'Baltimore', 'Maryland', '5');
+Insert Into Requests (submit_addrline1, submit_city, submit_state, addr_id)
+VALUES ('101 East Mt Royal', 'Baltimore', 'Maryland', '1');
+Insert Into Requests (submit_addrline1, submit_city, submit_state, addr_id)
+VALUES ('100 N Calvert St', 'Baltimore', 'Maryland', '2');
+Insert Into Requests (submit_addrline1, submit_city, submit_state, addr_id)
+VALUES ('1000 Greenmount Ave', 'Baltimore', 'Maryland', '3');
